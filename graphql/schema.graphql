@@ -1,0 +1,15 @@
+type Movie{
+    id:Int!
+    title:String!
+    rating:Float!
+    runtime:Int!
+    description_full:String!
+    genres:[String!]!
+    medium_cover_image:String!
+}
+
+type Query{
+    movies:[Movie!]!
+    movie(id:Int!):Movie!
+    suggestions(id:Int!):[Movie!]!
+}
